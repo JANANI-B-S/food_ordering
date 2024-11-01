@@ -14,12 +14,15 @@ th {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .cart__page-btn {
   display: flex;
   flex-wrap: nowrap;
   margin: 2rem 0;
 }
 
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 .cart__page-btn button a:hover {
   color: #fff;
 }
@@ -29,6 +32,7 @@ th {
   font-size: 1.5rem;
 }
 
+<<<<<<< HEAD
 .addTOCart__btn {
   border: none;
   padding: 7px 25px;
@@ -38,6 +42,8 @@ th {
   font-size: 0.9rem;
 }
 
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 @media only screen and (max-width: 768px) {
   th,
   td {

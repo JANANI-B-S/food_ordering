@@ -4,11 +4,14 @@
   object-fit: cover;
 }
 
+<<<<<<< HEAD
 .cart__item:hover {
   background-color: rgba(230, 230, 230, 0.994);
   cursor: pointer;
 }
 
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 .cart__product-title {
   font-size: 0.8rem;
   font-weight: 600;

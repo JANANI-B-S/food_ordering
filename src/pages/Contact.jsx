@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col } from "reactstrap";
 
@@ -58,6 +59,11 @@ const Contact = () => {
       </section>
     </Helmet>
   );
+=======
+
+const Contact = () => {
+  return <div>Contact</div>;
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 };
 
 export default Contact;

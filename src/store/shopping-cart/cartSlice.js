@@ -31,17 +31,31 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
 
+<<<<<<< HEAD
   
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
   reducers: {
     // =========== add item ============
     addItem(state, action) {
       const newItem = action.payload;
+<<<<<<< HEAD
       const id = action.payload.id;
       const extraIngredients = action.payload.extraIngredients;
       const existingItem = state.cartItems.find((item) => item.id === id);
 
       
       if (!existingItem) {
+=======
+      const existingItem = state.cartItems.find(
+        (item) => item.id === newItem.id
+      );
+      state.totalQuantity++;
+
+      if (!existingItem) {
+        // ===== note: if you use just redux you should not mute state array instead of clone the state array, but if you use redux toolkit that will not a problem because redux toolkit clone the array behind the scene
+
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
         state.cartItems.push({
           id: newItem.id,
           title: newItem.title,
@@ -49,6 +63,7 @@ const cartSlice = createSlice({
           price: newItem.price,
           quantity: 1,
           totalPrice: newItem.price,
+<<<<<<< HEAD
           extraIngredients: newItem.extraIngredients
         });
         state.totalQuantity++;
@@ -82,6 +97,21 @@ const cartSlice = createSlice({
       );
 
 
+=======
+        });
+      } else {
+        existingItem.quantity++;
+        existingItem.totalPrice =
+          Number(existingItem.totalPrice) + Number(newItem.price);
+      }
+
+      state.totalAmount = state.cartItems.reduce(
+        (total, item) => total + Number(item.price) * Number(item.quantity),
+
+        0
+      );
+
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
       setItemFunc(
         state.cartItems.map((item) => item),
         state.totalAmount,
@@ -89,8 +119,11 @@ const cartSlice = createSlice({
       );
     },
 
+<<<<<<< HEAD
    
 
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
     // ========= remove item ========
 
     removeItem(state, action) {

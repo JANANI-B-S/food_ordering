@@ -1,6 +1,10 @@
 .common__section {
   background: linear-gradient(#212245b2, #212245b2),
+<<<<<<< HEAD
     url("../assets/images/pizza.png");
+=======
+    url("../assets/images/banner-02.jpg");
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 
   background-repeat: no-repeat;
   background-size: cover;

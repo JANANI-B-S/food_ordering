@@ -2,6 +2,7 @@
   width: 100%;
   height: 100px;
   line-height: 100px;
+<<<<<<< HEAD
   top: 0;
 }
 
@@ -23,16 +24,21 @@
   box-shadow: 5px 5px 15px -5px #d7d6d6;
   animation-name: animation;
   animation-duration: 0.5s;
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 }
 
 .logo {
   text-align: center;
 }
+<<<<<<< HEAD
 
 .logo:hover {
   cursor: pointer;
 }
 
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 .logo img {
   width: calc(100% - 60%);
   object-fit: contain;
@@ -62,6 +68,17 @@
   color: #df2020 !important;
 }
 
+<<<<<<< HEAD
+=======
+.cart__icon i,
+.user i,
+.mobile__menu i {
+  font-size: 1.3rem;
+  color: #212245;
+  cursor: pointer;
+}
+
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 .cart__icon {
   position: relative;
 }
@@ -87,6 +104,18 @@
   display: none;
 }
 
+<<<<<<< HEAD
+=======
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99999;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 @media only screen and (max-width: 992px) {
   .logo img {
     width: calc(100% - 70%);
@@ -129,11 +158,21 @@
     display: block;
   }
 
+<<<<<<< HEAD
+=======
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1rem;
+  }
+
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
   .show__menu {
     display: block;
   }
 }
 
+<<<<<<< HEAD
 .header__closeButton {
   width: fit-content;
   height: 60px;
@@ -160,6 +199,8 @@
   }
 }
 
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
@@ -174,6 +215,7 @@
     margin-top: -55px;
   }
 }
+<<<<<<< HEAD
 
 @media only screen and (max-width: 480px) {
   .menu {
@@ -198,3 +240,5 @@
   color: #fff;
   cursor: pointer;
 }
+=======
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071

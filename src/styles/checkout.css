@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .checkoutMessage {
   width: fit-content;
   margin: 1rem auto;
@@ -18,5 +19,23 @@
 @media only screen and (max-width: 480px) {
   .checkoutMessage {
     margin: 1rem 1rem;
+=======
+.checkout__bill {
+  background: #fde4e4;
+  padding: 30px;
+}
+
+.checkout__total {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkout__bill h6 {
+    font-size: 0.9rem;
+  }
+  .checkout__bill {
+    margin-top: 40px;
+>>>>>>> 506e83d3a6354efcfc82e98c3e88d86a8c13e071
   }
 }
