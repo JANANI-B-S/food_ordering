@@ -1,12 +1,8 @@
 import React from "react";
-
 import "../../../styles/product-card.css";
-
-// import productImg from "../../../assets/images/product_2.1.jpg";
-
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../../store/shopping-cart/cartSlice";
-
+import { wishlistActions } from "../../../store/shopping-cart/wishlistSlice"; // Import wishlist actions
 import { Link } from "react-router-dom";
 
 const ProductCard = (props) => {
@@ -20,7 +16,19 @@ const ProductCard = (props) => {
         title,
         image01,
         price,
-        extraIngredients
+        extraIngredients,
+      })
+    );
+  };
+
+  // Add to Wishlist function
+  const addToWishlist = () => {
+    dispatch(
+      wishlistActions.addItemToWishlist({
+        id,
+        title,
+        image01,
+        price,
       })
     );
   };
@@ -35,8 +43,12 @@ const ProductCard = (props) => {
       </div>
       <div className="d-flex flex-column align-items-center justify-content-between">
         <span className="product__price mb-2">{price} € </span>
-        <button className="addTOCART__btn" onClick={addToCart}>
+        <button className="addTOCART__btn mb-2" onClick={addToCart}>
           Add to Cart
+        </button>
+        {/* Wishlist Button */}
+        <button className="addToWishlist__btn" onClick={addToWishlist}>
+          Add to Wishlist
         </button>
       </div>
     </div>

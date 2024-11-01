@@ -1,36 +1,28 @@
 import React from "react";
-import Helmet from "../components/Helmet/Helmet.js";
+import Helmet from "../components/Helmet/Helmet";
 import { Container, Row, Col } from "reactstrap";
-
 import { Link } from "react-router-dom";
-
 import guyImg from "../assets/images/delivery-guy.png";
 import "../styles/hero-section.css";
 
 const Home = () => {
   return (
     <Helmet title="Home">
-      <section>
+      <section className="hero-section">
         <Container>
-          <Row>
-            <Col lg="6" md="6">
-              <div className="hero__content">
-                <h5 className="mb-3">Easy order & fast delivery</h5>
-                <h1 className="mb-4 hero__title">
-                  <span>Enjoy</span> your favorite Pizza
-                </h1>
-
-                <button className="order__btn d-flex align-items-center justify-content-between ">
-                  <Link to="/pizzas">
-                    Menu <i className="ri-arrow-right-s-line"></i>
-                  </Link>
-                </button>
-              </div>
+          <Row className="align-items-center">
+            <Col lg="6" md="12" className="hero-text">
+              <h5 className="hero-subtitle">Easy Order & Fast Delivery</h5>
+              <h1 className="hero-title">
+                <span>Enjoy</span> Your Favorite Pizza
+              </h1>
+              <Link to="/pizzas" className="hero-btn">
+                Explore Menu <i className="ri-arrow-right-s-line"></i>
+              </Link>
             </Col>
-
-            <Col lg="6" md="6">
-              <div className="hero__img">
-                <img src={guyImg} alt="delivery-guy" className="w-100" />
+            <Col lg="6" md="12">
+              <div className="hero-image">
+                <img src={guyImg} alt="Delivery Guy" />
               </div>
             </Col>
           </Row>
@@ -41,3 +33,4 @@ const Home = () => {
 };
 
 export default Home;
+
